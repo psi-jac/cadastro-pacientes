@@ -240,7 +240,7 @@
 /* =====================================================================
    CONFIGURAÇÃO — você pode colar o ID do cliente aqui OU usar o botão ⚙
    ===================================================================== */
-const CLIENT_ID_FIXO = "";               // opcional
+const CLIENT_ID_FIXO = "784158161151-l7e3qfl9d1efj94cqhr9fetatqqgv4f2.apps.googleusercontent.com";
 const NOME_ARQUIVO_DB = "cadastro_pacientes_psicologia.json";
 const ESCOPO = "https://www.googleapis.com/auth/drive.file";
 
@@ -604,6 +604,7 @@ carregarLocal();
 preencherForm();
 renderRelSelect();
 if(!clientId()) setStatus("Modo local — clique em ⚙ Configurar para ativar o Google Drive","");
+else setStatus("Clique em “Conectar ao Google Drive” para salvar na nuvem","");
 </script>
 </body>
 </html>
